@@ -1,0 +1,43 @@
+#projects {
+  padding: 7rem 5rem;
+}
+
+.projects-header {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3rem;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+
+/* Breakpoints */
+
+@media only screen and (max-width: 52em) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 48em) {
+  #projects {
+    padding: 5rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  /* 42em = 672px */
+  .projects-header {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 35em) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}

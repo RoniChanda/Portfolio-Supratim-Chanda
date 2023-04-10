@@ -1,0 +1,40 @@
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.6px;
+  padding: 1.5rem;
+  transition: 0.4s;
+  margin-top: 3rem;
+}
+
+.footer p {
+  color: #bcbac4;
+}
+
+.scroll {
+  position: fixed;
+  right: -20%;
+  padding: 0.5rem 1.2rem;
+  font-size: 2rem;
+  background-color: var(--themeColor);
+  color: #fff;
+  border-radius: 4px 0 0 4px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.scroll-up {
+  bottom: 4rem;
+}
+
+.scroll-down {
+  bottom: 9rem;
+}
+
+.scroll:hover {
+  box-shadow: 0 0 1rem var(--themeColor);
+}
+
+.show-scroll {
+  right: 0;
+}

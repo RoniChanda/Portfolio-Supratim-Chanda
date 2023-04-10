@@ -1,0 +1,34 @@
+nav {
+  margin-top: 3rem;
+}
+
+.navitem {
+  list-style: none;
+}
+
+.navitem a {
+  display: inline-block;
+  padding: 7px 10px;
+  margin: 7px 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navicon {
+  color: #fff;
+  font-size: 1.6rem;
+  transition: 0.4s;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.navitem a:hover .navicon {
+  color: var(--themeColor);
+}
+
+.navitem-active {
+  color: var(--themeColor);
+}

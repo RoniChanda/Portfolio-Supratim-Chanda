@@ -1,0 +1,19 @@
+.mydescription {
+  font-size: 1.2rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.decription-link {
+  display: inline-block;
+  color: var(--textColor);
+  border-bottom: 2px solid var(--themeColor);
+  transition: all 0.4s;
+}
+
+.decription-link:hover {
+  transform: translateY(3px);
+  color: var(--themeColor);
+}

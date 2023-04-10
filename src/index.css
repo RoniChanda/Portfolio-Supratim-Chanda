@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Color Variables */
+:root {
+  --mainBGColor: #050816;
+  --sideBGColor: #040612; /* 040612, 040b14  */
+  --secondaryBGColor: #342f4a;
+  --themeColor: #f03e3e; /* 00a78e, f03e3e, 915eff */
+  --cardColor: #1d1836;
+  --titleColor: #f2f1f3;
+  --textColor: #bcbac4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Base styles */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 1 rem = 10px; 10px/16px = 62.5% */
+  scroll-behavior: smooth;
+}
+
+.light-theme {
+  --mainBGColor: #f2f1f3;
+  --sideBGColor: #1d1836;
+  --secondaryBGColor: #f0eefc;
+  --themeColor: #f03e3e; /* 00a78e, f03e3e, 915eff */
+  --cardColor: #fff;
+  --titleColor: #242329;
+  --textColor: #6d6a7c;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--textColor);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--titleColor);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+footer {
+  background-color: var(--sideBGColor);
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+main {
+  margin-left: 30rem;
+  background-color: var(--mainBGColor);
+  transition: 0.3s;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--themeColor);
+  color: #fff;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  box-shadow: 0 0 1rem var(--themeColor);
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+/* Breakpoints */
+
+@media only screen and (max-width: 65em) {
+  /* 65em = 65*16px = 1040px */
+  main {
+    margin-left: 0;
+  }
 }

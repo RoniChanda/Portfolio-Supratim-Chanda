@@ -1,0 +1,39 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 4rem;
+}
+
+.social-icons a:link {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 2.5px;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--themeColor);
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(2px);
+  box-shadow: 0 0 1rem var(--themeColor);
+}
+
+.social-icon {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-food {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 2rem 0;
+}

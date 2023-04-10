@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import Aos from "aos";
 
-function App() {
+import About from "./sections/About";
+import ContactMe from "./sections/ContactMe";
+import Home from "./sections/Home";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
+import Sidebar from "./sections/Sidebar";
+import SocialIconsFooter from "./sections/SocialIconsFooter";
+import "aos/dist/aos.css";
+
+export default function App() {
+  useEffect(() => {
+    Aos.init({
+      offset: 80,
+      duration: 2000,
+      delay: 200,
+      anchorPlacement: "top-bottom",
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Sidebar />
+      <main>
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <ContactMe />
+        <SocialIconsFooter />
+      </main>
+    </>
   );
 }
-
-export default App;

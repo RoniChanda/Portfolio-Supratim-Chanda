@@ -1,0 +1,77 @@
+header {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 30rem;
+  padding: 1.5rem 3rem;
+
+  overflow-y: auto;
+  transition: 0.4s;
+  z-index: 199;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.top-icon {
+  position: fixed;
+  top: 25px;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--mainBGColor);
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 99;
+
+  font-size: 1.8rem;
+  color: var(--titleColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-icon {
+  display: none;
+  z-index: 199;
+  left: 25px;
+}
+
+.theme-icon {
+  right: 25px;
+}
+
+.music-icon {
+  right: 75px;
+}
+
+.icon-placement {
+  margin-top: 1.1rem;
+}
+
+.mobile-nav-active {
+  left: 0;
+}
+
+/* Breakpoints */
+
+@media only screen and (max-width: 65em) {
+  /* 65em = 65*16px = 1040px */
+  header {
+    left: -30rem;
+    opacity: 0.95;
+  }
+  .toggle-icon {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .music-icon-position {
+    top: 75px;
+    right: 25px;
+  }
+}

@@ -1,0 +1,160 @@
+#contact {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.contact-outercontainer {
+  height: 100%;
+  width: 100%;
+  padding: 7rem 5rem;
+  padding-bottom: 2rem;
+}
+
+.contact-innercontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cardColor);
+  color: var(--titleColor);
+  border-radius: 4px;
+  padding: 3rem 5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.contact-innercontainer h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.contact-innercontainer h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: var(--titleColor);
+  background-color: var(--secondaryBGColor);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.form-btn {
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-self: center;
+}
+
+.info-content {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+.map {
+  height: 21rem;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  animation: stars-move 8s ease-in-out infinite;
+}
+
+.star1 {
+  animation-delay: 0s;
+  background-image: url(../../public/Images/stars/star1.png);
+}
+.star2 {
+  animation-delay: -1s;
+  background-image: url(../../public/Images/stars/star2.png);
+}
+.star3 {
+  animation-delay: -2s;
+  background-image: url(../../public/Images/stars/star3.png);
+}
+.star4 {
+  animation-delay: -3s;
+  background-image: url(../../public/Images/stars/star4.png);
+}
+.star5 {
+  animation-delay: -4s;
+  background-image: url(../../public/Images/stars/star5.png);
+}
+.star6 {
+  animation-delay: -5s;
+  background-image: url(../../public/Images/stars/star6.png);
+}
+.star7 {
+  animation-delay: -6s;
+  background-image: url(../../public/Images/stars/star7.png);
+}
+.star8 {
+  animation-delay: -7s;
+  background-image: url(../../public/Images/stars/star8.png);
+}
+
+.star-hide {
+  background-image: none;
+}
+
+/* Breakpoints */
+
+@media only screen and (max-width: 48em) {
+  /* 48em = 48*16px = 768px */
+  .contact-outercontainer {
+    padding: 5rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  /* 42em = 672px */
+  .contact-innercontainer {
+    padding: 3rem;
+  }
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  .info-container {
+    order: -1;
+    justify-self: stretch;
+  }
+}
+
+/* Animation  */
+
+@keyframes stars-move {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

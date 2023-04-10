@@ -1,0 +1,30 @@
+.education {
+  margin-top: -2rem;
+}
+
+.courses {
+  font-size: 0.9rem;
+  margin-top: -2rem;
+}
+
+.timeline-icon {
+  margin-top: 1rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education:before {
+  background: var(--themeColor);
+}
+
+.courses:before {
+  background: var(--themeColor);
+}
+
+@media screen and (max-width: 42em) {
+  .vertical-timeline-element--work {
+    text-align: left;
+  }
+}
