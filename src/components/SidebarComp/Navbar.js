@@ -21,7 +21,7 @@ export default function Navbar({ onPress }) {
               spy={true}
               smooth={true}
               offset={-20}
-              duration={1500}
+              duration={1000}
               onClick={onPress}
               onSetActive={activeLinkHandler.bind(null, data.title)}
             >

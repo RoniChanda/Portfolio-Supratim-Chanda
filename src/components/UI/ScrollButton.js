@@ -37,7 +37,7 @@ export default function ScrollButton() {
         spy={true}
         smooth={true}
         offset={50}
-        duration={1500}
+        duration={1000}
         className={`scroll scroll-down ${showScrollDown && "show-scroll"}`}
       >
         <i className="fa-solid fa-caret-down"></i>
@@ -47,7 +47,7 @@ export default function ScrollButton() {
         spy={true}
         smooth={true}
         offset={50}
-        duration={1500}
+        duration={1000}
         className={`scroll scroll-up ${showScrollUp && "show-scroll"}`}
       >
         <i className="fa-solid fa-caret-up"></i>
