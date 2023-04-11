@@ -8,9 +8,11 @@ import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Sidebar from "./sections/Sidebar";
 import SocialIconsFooter from "./sections/SocialIconsFooter";
+import ScrollButton from "./components/UI/ScrollButton";
 import "aos/dist/aos.css";
 
 export default function App() {
+  // Animation on Scroll
   useEffect(() => {
     Aos.init({
       offset: 80,
@@ -30,6 +32,7 @@ export default function App() {
         <Projects />
         <ContactMe />
         <SocialIconsFooter />
+        <ScrollButton />
       </main>
     </>
   );

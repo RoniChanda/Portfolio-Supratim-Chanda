@@ -61,6 +61,7 @@ export default function ContactMe() {
           <h3 data-aos="fade-down">Get in touch</h3>
           <h2 data-aos="fade-down">Contact Me!</h2>
           <div className="contact-content">
+            {/* contact form */}
             <form
               className="contact-form"
               onSubmit={emailSubmitHandler}
@@ -104,7 +105,7 @@ export default function ContactMe() {
                 Send Message
               </button>
             </form>
-
+            {/* Additional info */}
             <div className="info-container" data-aos="fade-left">
               <div className="info-content">
                 <i className="fa-solid fa-envelope"></i>
@@ -114,13 +115,17 @@ export default function ContactMe() {
                 <i className="fa-solid fa-location-dot"></i>
                 <p>Dhaleswar, Agartala, Tripura.</p>
               </div>
+              {/* Map */}
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d58388.944116434024!2d91.27597675490908!3d23.843158590349713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDUwJzIyLjciTiA5McKwMTcnNDYuNiJF!5e0!3m2!1sen!2sin!4v1681110014705!5m2!1sen!2sin"
                 className="map"
                 title="map"
                 width="100%"
                 height="300"
-                style={{ border: "0", borderRadius: "4px" }}
+                style={{
+                  border: "0",
+                  borderRadius: "4px",
+                }}
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"

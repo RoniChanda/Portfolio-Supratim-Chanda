@@ -1,24 +1,24 @@
 #about {
-  padding: 7rem 5rem;
+  padding: 8rem 6rem;
   overflow-x: hidden;
 
   display: grid;
-  grid-template-columns: 25rem 1fr;
-  grid-template-rows: 1fr 25rem 10rem;
-  gap: 3rem;
+  grid-template-columns: 30rem 1fr;
+  grid-template-rows: 1fr 32rem 10rem;
+  gap: 3.5rem;
   justify-content: center;
 }
 
 .tab-btns {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   grid-column: 1/-1;
   grid-row: 1;
 }
 
 .tab-btn {
   position: relative;
-  font-size: 2.2rem;
+  font-size: 2.75rem;
   padding-bottom: 0.5rem;
   cursor: pointer;
 }
@@ -33,7 +33,7 @@
   left: 0;
   bottom: 0;
   width: 20%;
-  height: 2px;
+  height: 3px;
   background-color: var(--themeColor);
   transition: all 0.3s;
 }
@@ -44,14 +44,16 @@
 }
 
 .about-img {
+  margin-top: 2rem;
   width: 100%;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  box-shadow: var(--generalShadow);
 }
 
 .about-description {
   grid-row: 2 / -1;
   grid-column: 2;
+  overflow: hidden;
 }
 
 .btn-contact {
@@ -61,19 +63,8 @@
 
 /* Breakpoints */
 
-@media only screen and (max-width: 48em) {
-  /* 48em = 768px */
-  #about {
-    padding: 5rem 3rem;
-  }
-
-  .about-container {
-    gap: 2rem;
-  }
-}
-
-@media only screen and (max-width: 42em) {
-  /* 42em = 672px */
+@media only screen and (max-width: 76em) {
+  /* 76em = 1216px */
   #about {
     display: flex;
     flex-direction: column;
@@ -87,6 +78,7 @@
   .tab-btns {
     justify-content: center;
     order: 2;
+    gap: 4rem;
   }
   .about-description {
     order: 3;
@@ -96,8 +88,35 @@
   }
 }
 
-@media only screen and (max-width: 28em) {
-  /* 28em = 448px */
+@media only screen and (max-width: 65em) {
+  /* 65em = 1040px */
+  #about {
+    padding: 5rem 8rem;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  /* 48em = 768px */
+  #about {
+    padding: 5rem 3rem;
+  }
+  .about-container {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 35em) {
+  /* 35em = 560px */
+  .tab-btns {
+    gap: 2rem;
+  }
+  .tab-btn {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  /* 30em = 480px */
   .tab-btn {
     font-size: 1.8rem;
   }

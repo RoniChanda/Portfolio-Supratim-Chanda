@@ -1,17 +1,12 @@
 .profile {
   text-align: center;
-  margin: 1rem 0 0.8rem;
-}
-
-.profile-name {
-  color: #fff;
+  margin-top: 1rem;
 }
 
 .profile img {
   width: 60%;
   border-radius: 50%;
-  box-shadow: 6px 8px 4px var(--themeColor);
-  /* border-bottom: 0.5rem solid var(--themeColor); */
+  box-shadow: 8px 10px 5px var(--themeColor);
   transform: scale(0.95);
   transition: all 0.3s;
 }
@@ -19,4 +14,17 @@
 .profile img:hover {
   border-color: var(--themeColor);
   transform: scale(1);
+}
+
+.profile-name {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 30em) {
+  /* 30em = 480px */
+  .profile img {
+    width: 75%;
+  }
 }

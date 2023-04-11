@@ -1,28 +1,19 @@
-nav {
-  margin-top: 3rem;
-}
-
-.navitem {
-  list-style: none;
-}
-
 .navitem a {
   display: inline-block;
-  padding: 7px 10px;
-  margin: 7px 0;
-  font-size: 1.5rem;
-  letter-spacing: 0.6px;
+  padding: 8px 12px;
+  margin: 8px 0;
+  letter-spacing: 1px;
   text-decoration: none;
   cursor: pointer;
 }
 
 .navicon {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 2rem;
   transition: 0.4s;
 
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .navitem a:hover .navicon {

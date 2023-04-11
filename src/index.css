@@ -35,6 +35,7 @@ html {
   --cardColor: #fff;
   --titleColor: #242329;
   --textColor: #6d6a7c;
+  --generalShadow: 0 2.5px 5px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -64,12 +65,12 @@ footer {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.75rem;
   font-weight: 400;
 }
 
 main {
-  margin-left: 30rem;
+  margin-left: 35rem;
   background-color: var(--mainBGColor);
   transition: 0.3s;
 }
@@ -79,16 +80,16 @@ main {
 .btn {
   display: inline-block;
   text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 1.25rem 2.5rem;
   background-color: var(--themeColor);
   color: #fff;
-  border-radius: 4rem;
-  font-size: 1.6rem;
+  border-radius: 5rem;
+  font-size: 2rem;
   font-weight: 600;
   transition: 0.5s ease;
   border: none;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--generalShadow);
 }
 
 .btn:hover {
@@ -102,8 +103,15 @@ main {
 /* Breakpoints */
 
 @media only screen and (max-width: 65em) {
-  /* 65em = 65*16px = 1040px */
+  /* 65em = 1040px */
   main {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  /* 30em = 480px */
+  h2 {
+    font-size: 2.2rem;
   }
 }

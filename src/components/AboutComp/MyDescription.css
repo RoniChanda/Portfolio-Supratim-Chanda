@@ -1,15 +1,17 @@
 .mydescription {
-  font-size: 1.2rem;
+  font-size: 1.45rem;
+  margin-top: 1.5rem;
   text-align: justify;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
+  word-spacing: 2px;
 }
 
 .decription-link {
   display: inline-block;
   color: var(--textColor);
-  border-bottom: 2px solid var(--themeColor);
+  border-bottom: 2.5px solid var(--themeColor);
   transition: all 0.4s;
 }
 

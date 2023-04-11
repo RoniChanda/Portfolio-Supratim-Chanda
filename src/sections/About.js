@@ -54,6 +54,7 @@ export default function About() {
         <img
           src="Images/about-img.jpg"
           alt="Supratim Chanda"
+          id="about-img"
           className="about-img"
           data-aos-anchor="#about"
         />

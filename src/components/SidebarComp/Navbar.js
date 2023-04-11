@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 
-import "./Navbar.css";
 import { navLinks } from "../../data";
+import "./Navbar.css";
 
 export default function Navbar({ onPress }) {
   const [activeLink, setActiveLink] = useState("");
@@ -20,7 +20,7 @@ export default function Navbar({ onPress }) {
               to={`${data.title}`}
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-20}
               duration={500}
               onClick={onPress}
               onSetActive={activeLinkHandler.bind(null, data.title)}

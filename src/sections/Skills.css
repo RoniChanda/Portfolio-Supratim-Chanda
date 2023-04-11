@@ -1,34 +1,33 @@
 #skills {
   position: relative;
-  padding: 7rem 5rem 14rem 5rem;
+  padding: 8rem 6rem 16rem;
 }
 
 .skill-header {
-  font-size: 2.2rem;
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .skills-container {
+  padding: 4rem 0;
   background-color: var(--cardColor);
-  border-radius: 4px;
-  padding: 3rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  box-shadow: var(--generalShadow);
 }
 
 .skill-imgs {
   display: grid;
-  padding: 0 5rem;
+  padding: 0 6rem;
 
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
+  gap: 6rem;
   justify-content: center;
   justify-items: center;
   align-items: center;
 }
 
 .skill-img {
-  width: 5rem;
+  width: 6rem;
   transition: all 0.3s;
 }
 
@@ -40,23 +39,32 @@
 .skill-title {
   display: inline-block;
   position: absolute;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  bottom: 3rem;
   left: 50%;
+  bottom: 3.75rem;
   transform: translate(-50%, 0);
+
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
   background-color: var(--cardColor);
   color: var(--titleColor);
+
+  border-radius: 2.5rem;
+  box-shadow: var(--generalShadow);
   animation: right-slide 0.4s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Breakpoints */
+@media only screen and (max-width: 65em) {
+  /* 65em = 1040px */
+  #skills {
+    padding: 8rem 8rem 16rem;
+  }
+}
+
 @media only screen and (max-width: 48em) {
   /* 48em = 768px */
   #skills {
-    padding: 7rem 3rem 14rem 3rem;
+    padding: 8rem 3rem 16rem;
   }
 }
 
@@ -65,17 +73,16 @@
   .skill-header {
     text-align: center;
   }
+
   .skill-imgs {
     grid-template-columns: repeat(3, 1fr);
   }
-  .skill-img {
-    width: 4rem;
-  }
 }
-@media only screen and (max-width: 28em) {
-  /* 28em = 448px */
-  .skill-imgs {
-    grid-template-columns: repeat(2, 1fr);
+
+@media only screen and (max-width: 30em) {
+  /* 30em = 480px */
+  .skill-img {
+    width: 4.5rem;
   }
 }
 

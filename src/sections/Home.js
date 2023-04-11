@@ -30,7 +30,7 @@ export default function Home() {
             <span>a</span>
             <span>t</span>
             <span>i</span>
-            <span>m</span> <span style={{ marginLeft: "1rem" }}>C</span>
+            <span>m</span> <span style={{ marginLeft: "1.25rem" }}>C</span>
             <span>h</span>
             <span>a</span>
             <span>n</span>

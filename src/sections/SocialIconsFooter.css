@@ -1,16 +1,18 @@
 .social-icons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 8rem);
   justify-content: center;
-  gap: 1.5rem;
-  padding-top: 4rem;
+  justify-items: center;
+  align-items: center;
+  padding-top: 5rem;
 }
 
 .social-icons a:link {
   display: inline-block;
-  font-size: 1.8rem;
-  margin: 2.5px;
-  width: 3.6rem;
-  height: 3.6rem;
+  font-size: 2.25rem;
+  margin: 3px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   text-align: center;
   background-color: var(--themeColor);
@@ -19,7 +21,7 @@
 
 .social-icons a:hover {
   transform: translateY(2px);
-  box-shadow: 0 0 1rem var(--themeColor);
+  box-shadow: 0 0 1.25rem var(--themeColor);
 }
 
 .social-icon {
@@ -33,7 +35,18 @@
 }
 
 .share-food {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
+}
+
+@media only screen and (max-width: 30em) {
+  /* 30em = 480px */
+  .social-icons {
+    grid-template-columns: repeat(4, 7.5rem);
+    row-gap: 2rem;
+  }
+  .social-icons a:nth-child(5) {
+    grid-column: 2/3;
+  }
 }

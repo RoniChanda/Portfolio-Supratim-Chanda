@@ -27,6 +27,7 @@ export default function Sidebar() {
       setTheme(localStorage.getItem("theme"));
     }
 
+    // Change colors, home section bg-image and contact section bg-image
     if (theme === "light") {
       document.body.classList.add("light-theme");
       document.getElementById("home").classList.add("background-light");

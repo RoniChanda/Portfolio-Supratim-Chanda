@@ -15,14 +15,14 @@ export const educationData = [
     date: "2015-2019",
   },
   {
-    institute: "Shishu Bihar H/S School",
+    institute: "Shishu Bihar Higher Secondary School",
     place: "Agartala, Tripura",
     degree: "12th Standard",
     percentage: "86%",
     date: "2013-2015",
   },
   {
-    institute: "Shiksha Niketan H/S School",
+    institute: "Shiksha Niketan Higher Secondary School",
     place: "Agartala, Tripura",
     degree: "10th Standard",
     percentage: "89.86%",
