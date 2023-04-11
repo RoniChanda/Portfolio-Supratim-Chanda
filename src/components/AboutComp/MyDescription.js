@@ -16,9 +16,9 @@ export default function MyDescription() {
         skills, work as a team member, gain experience and get acquainted with
         more tools and technologies. Graduated in 2019 with a bachelor's degree
         in Electronics and in 2021 secured 161 AIR in GATE. From 2022, I have
-        been learning web development and working on{" "}
+        been learning web development and working on design and mern{" "}
         <a href="#projects" className="decription-link">
-          design and mern projects.
+          projects.
         </a>
       </p>
       <p>

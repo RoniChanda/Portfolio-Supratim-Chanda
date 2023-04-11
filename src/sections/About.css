@@ -82,6 +82,7 @@
   }
   .about-description {
     order: 3;
+    overflow: visible;
   }
   .btn-contact {
     order: 4;
