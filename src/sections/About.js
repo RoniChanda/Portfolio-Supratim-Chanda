@@ -72,7 +72,7 @@ export default function About() {
         spy={true}
         smooth={true}
         offset={-20}
-        duration={1000}
+        duration={500}
       >
         Contact Me
       </Link>
