@@ -48,7 +48,6 @@ header {
 
 .music-icon {
   right: 100px;
-  transition: 0.8s ease-in-out;
 }
 
 .icon-placement {
@@ -78,9 +77,5 @@ header {
   /* 30em = 480px */
   header {
     width: 28rem;
-  }
-  .music-icon-position {
-    top: 100px;
-    right: 25px;
   }
 }
