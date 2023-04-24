@@ -68,6 +68,15 @@ export const skillsData = [
 export const projectsData = [
   {
     id: 1,
+    type: "Moviflix",
+    image: "Images/projects/moviflix.png",
+    description:
+      "React based movies/tv shows site to search, watch trailers, download, and filter them according to your needs.",
+    link: "https://moviflix-1f1f5.web.app/",
+    gitrepo: "https://github.com/RoniChanda/Moviflix",
+  },
+  {
+    id: 2,
     type: "Proshop",
     image: "Images/projects/proshop.png",
     description:
@@ -76,7 +85,7 @@ export const projectsData = [
     gitrepo: "https://github.com/RoniChanda/ProShop",
   },
   {
-    id: 2,
+    id: 3,
     type: "DevConnector",
     image: "Images/projects/devconnector.png",
     description:
@@ -85,7 +94,7 @@ export const projectsData = [
     gitrepo: "https://github.com/RoniChanda/DevConnector",
   },
   {
-    id: 3,
+    id: 4,
     type: "Omnifood",
     image: "Images/projects/omnifood.png",
     description:
@@ -94,7 +103,7 @@ export const projectsData = [
     gitrepo: "https://github.com/RoniChanda/Omnifood",
   },
   {
-    id: 4,
+    id: 5,
     type: "Clipboard",
     image: "Images/projects/clipboard.png",
     description:
@@ -103,7 +112,7 @@ export const projectsData = [
     gitrepo: "https://github.com/RoniChanda/clipboard",
   },
   {
-    id: 5,
+    id: 6,
     type: "Natours",
     image: "Images/projects/natours.png",
     description:
@@ -111,15 +120,15 @@ export const projectsData = [
     link: "https://timely-khapse-6e0515.netlify.app/",
     gitrepo: "https://github.com/RoniChanda/Natours",
   },
-  {
-    id: 6,
-    type: "Share Places",
-    image: "Images/projects/shareplaces.png",
-    description:
-      "Mern based place sharing site where people can share their favorite places with location in map.",
-    link: "https://share-places-mern.web.app/",
-    gitrepo: "https://github.com/RoniChanda/mern-share-place",
-  },
+  // {
+  //   id: 7,
+  //   type: "Share Places",
+  //   image: "Images/projects/shareplaces.png",
+  //   description:
+  //     "Mern based place sharing site where people can share their favorite places with location in map.",
+  //   link: "https://share-places-mern.web.app/",
+  //   gitrepo: "https://github.com/RoniChanda/mern-share-place",
+  // },
 ];
 
 export const socialIcons = [
