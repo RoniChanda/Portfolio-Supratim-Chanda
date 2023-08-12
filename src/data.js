@@ -68,6 +68,15 @@ export const skillsData = [
 export const projectsData = [
   {
     id: 1,
+    type: "Natours-V2",
+    image: "Images/projects/natours_v2.png",
+    description:
+      "Mern based tour booking site having user, admin, guide and lead-guide roles with two-factor auth, payment, map, image upload and many more.",
+    link: "https://natours-mern-v2.netlify.app/",
+    gitrepo: "https://github.com/RoniChanda/Natours-V2",
+  },
+  {
+    id: 2,
     type: "Moviflix",
     image: "Images/projects/moviflix.png",
     description:
@@ -76,7 +85,7 @@ export const projectsData = [
     gitrepo: "https://github.com/RoniChanda/Moviflix",
   },
   {
-    id: 2,
+    id: 3,
     type: "Proshop",
     image: "Images/projects/proshop.png",
     description:
@@ -85,7 +94,7 @@ export const projectsData = [
     gitrepo: "https://github.com/RoniChanda/ProShop",
   },
   {
-    id: 3,
+    id: 4,
     type: "DevConnector",
     image: "Images/projects/devconnector.png",
     description:
@@ -94,22 +103,13 @@ export const projectsData = [
     gitrepo: "https://github.com/RoniChanda/DevConnector",
   },
   {
-    id: 4,
+    id: 5,
     type: "Omnifood",
     image: "Images/projects/omnifood.png",
     description:
       "Responsive food app design to deliver healthy meals 24/7 using css grids, flexbox with image optimization.",
     link: "https://omnifood-chanda.netlify.app/",
     gitrepo: "https://github.com/RoniChanda/Omnifood",
-  },
-  {
-    id: 5,
-    type: "Clipboard",
-    image: "Images/projects/clipboard.png",
-    description:
-      "Responsive clipboard design to track and organise everything you copy using Tailwind CSS.",
-    link: "https://famous-taiyaki-c16e97.netlify.app/",
-    gitrepo: "https://github.com/RoniChanda/clipboard",
   },
   {
     id: 6,
@@ -122,6 +122,15 @@ export const projectsData = [
   },
   // {
   //   id: 7,
+  //   type: "Clipboard",
+  //   image: "Images/projects/clipboard.png",
+  //   description:
+  //     "Responsive clipboard design to track and organise everything you copy using Tailwind CSS.",
+  //   link: "https://famous-taiyaki-c16e97.netlify.app/",
+  //   gitrepo: "https://github.com/RoniChanda/clipboard",
+  // },
+  // {
+  //   id: 8,
   //   type: "Share Places",
   //   image: "Images/projects/shareplaces.png",
   //   description:
